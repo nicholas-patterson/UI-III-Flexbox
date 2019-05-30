@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* My code starts here ! */
+
+/******************** Header ******************* */
+.wrapper {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+nav a {
+  padding-right: 100px;
+  text-decoration: none;
+  color: #c3c3c3;
+  font-size: 15px;
+}
+
+/* *********************************************** */
+
+/* ******************** HEADER IMAGE **************** */
+
+.services-header-img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* ***************************************************** */
+
+/* ****************** SERVICES SECTION ******************* */
+.section-flex {
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services h2 {
+  font-size: 2rem;
+  padding-top: 30px;
+}
+
+hr {
+  height: 2px;
+  margin-top: 40px;
+}
+
+.styles {
+  background: #f2f1f2;
+  border: 1px solid black;
+  height: 300px;
+  width: 600px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  padding: 20px;
+  line-height: 30px;
+}
+
+button {
+  padding: 10px 40px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-top: 50px;
+}
+
+div hr {
+  background: black;
+  height: 3px;
+}
+
+.section-about {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.halfdiv {
+  line-height: 30px;
+  width: 50%;
+}
+
+.halfdiv ul {
+  list-style-type: square;
+  line-height: 30px;
+  margin-left: 20px;
+  padding-top: 30px;
+}
+
+/****************** FOOTER************** */
+footer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .section-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-img-header {
+    width: 100vw;
+  }
+
+  .wrapper {
+    width: 100vw;
+  }
+
+  .styles {
+    width: 100wv;
+  }
+}
